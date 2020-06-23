@@ -1,0 +1,17 @@
+.main-page{
+  width: 320px;
+  margin:auto;
+}
+
+@media(min-width: 768px){
+.main-page{
+  width:768px;
+  min-height:372px;
+}
+}
+
+@media(min-width: 1140px){
+  .main-page{
+    width:1140px;
+  }
+}

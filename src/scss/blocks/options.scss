@@ -1,0 +1,17 @@
+.options{
+  width:inherit;
+  padding: 0 20px 0;
+  background-color: rgb(255,255,255);
+}
+
+@media(min-width:768px) and (max-width: 1140px){
+ .options {
+   padding: 0 30px 0;
+ }
+}
+
+@media(min-width: 1140px){
+  .options{
+    padding: 0 70px 0;
+  }
+}

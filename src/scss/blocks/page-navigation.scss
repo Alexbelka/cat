@@ -1,0 +1,17 @@
+.page-navigation{
+  width: inherit;
+  min-height: inherit;
+}
+
+@media(min-width:768px){
+  .page-navigation{
+    padding: 0 30px 0;
+  }
+}
+
+@media(min-width: 1140px){
+  .page-navigation{
+    position:absolute;
+    width:1000px;
+  }
+}

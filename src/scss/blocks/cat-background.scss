@@ -1,0 +1,22 @@
+@media(min-width:320px ) {
+  .cat-background {
+    width: 500px;
+    min-height: 696px;
+    background-color: green;
+    display: none;
+  }
+}
+
+@media(min-width:768px){
+  .cat-background{
+    display: none;
+  }
+}
+
+@media(min-width: 1140px){
+  .cat-background{
+    display: block;
+    background: url('../../../build/jpg/index-background-desktop.jpg') -200px;
+    position:relative;
+  }
+}
