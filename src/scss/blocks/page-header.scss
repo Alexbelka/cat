@@ -8,6 +8,14 @@
   flex-direction: column;
 }
 
+.page-header__title{
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  line-height: 60px;
+  text-align: center;
+}
+
+
 
 @media(min-width:768px){
   .page-header{
@@ -21,7 +29,6 @@
     width:1140px;
     padding: 0 70px 0;
     flex-direction: row;
-    box-shadow: 0 0 2px 2px orange;
   }
 }
 

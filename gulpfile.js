@@ -33,29 +33,28 @@ function Js() {
         .pipe(gulp.dest('build/js'))
 }
 
-function Images(){
-    return gulp.src(['src/images/*'])
-        .pipe(imageMin())
-        .pipe(gulp.dest('build/images'))
-}
-
-function Svg(){
-    return gulp.src(['src/svg/*'])
-        .pipe(svgMin())
-        .pipe(gulp.dest('build/svg'))
-}
-
-function Jpeg(){
-    return gulp.src(['src/jpg/*'])
-        .pipe(imageMin())
-        .pipe(gulp.dest('build/jpg'))
-}
+// function Images(){
+//     return gulp.src(['src/catalog-images/*'])
+//         .pipe(imageMin())
+//         .pipe(gulp.dest('build/catalog-images'))
+// }
+//
+// function Svg(){
+//     return gulp.src(['src/catalog-svg/*'])
+//         .pipe(svgMin())
+//         .pipe(gulp.dest('build/catalog-svg'))
+// }
+//
+// function Jpeg(){
+//     return gulp.src(['src/catalog-jpeg/*'])
+//         .pipe(imageMin())
+//         .pipe(gulp.dest('build/catalog-jpeg'))
+// }
 
 function Server(){
     server.init({server:"./",browser:'firefox'});
     gulp.watch('html/*.html').on('change', server.reload)
-    gulp.watch('src/images').on('change',server.reload)
-    gulp.watch('src/scss/**/*.scss',gulp.series(Sass,Js,Images,Svg,Jpeg));
+    gulp.watch('src/scss/**/*.scss',gulp.series(Sass,Js));
 }
 
-exports.start = series(Sass,Js,Svg,Images,Jpeg,Server);
+exports.start = series(Sass,Js,Server);

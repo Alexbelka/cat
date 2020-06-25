@@ -1,0 +1,21 @@
+.frame{
+  min-height: 366px;
+  width:320px;
+  background-color: rgb(255,255,255);
+  position: relative;
+  overflow: hidden;
+}
+
+@media(min-width:768px){
+  .frame{
+    width: 768px;
+    min-height: 395px;
+  }
+}
+
+@media(min-width:1140px){
+  .frame{
+    width: 1140px;
+    min-height: 400px;
+  }
+}

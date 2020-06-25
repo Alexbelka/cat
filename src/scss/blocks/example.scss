@@ -1,0 +1,257 @@
+
+.example{
+  padding: 0 20px 0;
+  background-color: rgb(255,255,255);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Oswald', sans-serif;
+}
+
+.example__title{
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.example__text{
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__results{
+  width:280px;
+  min-height:56px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+.example__results-item{
+  min-width: 123px;
+  min-height: inherit;
+  box-shadow: 0 0 1px 1px rgb(210,210,210);
+  border-radius:5px;
+}
+
+.example__results-item p{
+  font-size: 24px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__wasted{
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.example__photo{
+  width:280px;
+  height:240px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+
+.example__photo-item{
+  width:inherit;
+  height: inherit;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.example__photo-item div{
+  width:inherit;
+  height: inherit;
+  position: absolute;
+}
+
+.example__photo-item--before{
+ background:url('../../../build/images/before-mobile.png') no-repeat -20px;
+  z-index: 1;
+}
+
+.example__photo-item--after{
+  background: url('../../../build/images/after-mobile.png') no-repeat 20px;
+  z-index: 0;
+}
+
+.example__range{
+  display: block;
+  margin: 20px auto;
+}
+
+.example__contacts{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.example__contacts-item--invitation{
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.example__contacts-item--address{
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.example__wasted br{
+  display:none;
+}
+
+@media(min-width: 768px){
+  .example {
+    padding: 100px 30px 0;
+  }
+
+  .example-wrapper{
+    width:708px;
+  }
+
+  .example__results-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  .example__wasted br{
+    display: block;
+  }
+
+  .example__text{
+    margin-top:65px;
+  }
+
+ .example__photo{
+   height:384px;
+   width:768px;
+   left:-30px;
+   margin-top: 200px;
+
+ }
+
+  .example__title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+
+  .example__photo-item div{
+    width:384px;
+    height: 517px;
+    bottom: 0;
+    background-size: 100%;
+  }
+
+  .example__photo-item--before{
+    left:0;
+    background: url('../../../build/images/before-desktop.png') no-repeat 0 -40px;
+
+  }
+
+  .example__photo-item--after{
+    right:0;
+    background: url('../../../build/images/after-desktop.png') no-repeat 0 -20px;
+
+  }
+
+  .example__contacts{
+    min-height: 86px;
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .example__contacts-item p{
+    min-height:86px;
+  }
+
+  .example__contacts-item--address{
+    width:154px;
+  }
+
+  .example__contacts-item--invitation{
+    width:170px;
+  }
+
+}
+
+@media(min-width:1140px){
+  .example{
+    width:1140px;
+    padding:0 70px 0;
+    flex-direction: row;
+  }
+
+  .example-container{}
+
+  .example-wrapper{
+    width:500px;
+  }
+
+  .example__results-wrapper{}
+
+  .example__photo-item div{
+    width:250px;
+    height: 462px;
+  }
+
+  .example__photo{
+    left:0;
+    height: 462px;
+    width:500px;
+    margin:0;
+  }
+
+  .example__photo-item{
+    width:500px;
+    height: 462px;
+  }
+
+  .example__contacts{
+    display: none;
+  }
+
+  .example__photo-wrapper{
+    position:relative;
+    height: 462px;
+  }
+
+  .example__results-wrapper{
+    display: flex;
+    flex-direction:column;
+  }
+
+  .example__photo-item--before{
+   background: url('../../../build/images/before-desktop.png') no-repeat 0 -30px;
+  }
+
+  .example__photo-item--after{
+    background: url('../../../build/images/after-desktop.png') no-repeat 0 -30px;
+   
+  }
+
+  .example__range{
+    margin:0;
+    position:absolute;
+    left:150px;
+    bottom:50px;
+  }
+
+}
