@@ -18,6 +18,7 @@
 @import"blocks/footer.scss";
 @import"blocks/footer-menu.scss";
 //----catalog
-@import "blocks/main-catalog.scss";
-@import"blocks/catalog-menu.scss";
-@import "blocks/menu-description";
+@import "catalog-blocks/main-catalog";
+@import "catalog-blocks/catalog-menu";
+@import "catalog-blocks/menu-description";
+@import "catalog-blocks/catalog-wrapper";
