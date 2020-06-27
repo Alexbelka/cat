@@ -8,7 +8,64 @@
     <title>Document</title>
     <link rel="stylesheet" href="../build/css/style.css">
 </head>
-<body>
-
+<body class="form">
+<header class="page-header">
+    <nav class="page-navigation">
+        <ul class="page-menu">
+            <li class="page-menu__item">
+                <a href="#">
+                    <img src="../build/svg/logo-mobile.svg" alt="">
+                </a>
+                <a href="#">Cat energy</a>
+                <button class="page-menu__close"></button>
+            </li>
+            <li class="page-menu__item"><a class="page-menu__ref" href="#">Главная</a></li>
+            <li class="page-menu__item"><a href="#">Каталог продукции</a></li>
+            <li class="page-menu__item"><a href="#">Подбор программы</a></li>
+        </ul>
+    </nav>
+    <h1 class="page-header__title">
+        Подбор программы
+    </h1>
+    <p class="page-header__text">
+        Заполните анкету и мы подберем программу питания для вашего кота
+    </p>
+</header>
+<main class="form-main">
+    <form action="" class="main-form">
+        <div class="main-form__wrapper">
+        <div class="main-form__table">
+        <label>ИМЯ<input class="main-form__table-name" type="text" value="БАРСИК"></label>
+        <label>Вес(кг)<input class="main-form__table-weight"  type="text" value="7"></label>
+        <label>Возраст(лет)<input class="main-form__table-age"  type="text" value="7"></label>
+        </div>
+        <div class="main-form__radio">
+            <label><input type="radio">похудение</label>
+            <label><input type="radio">набор массы</label>
+            <label><input type="radio">не знаю(нужен ваш совет)</label>
+        </div>
+        </div>
+        <h3 class="main-form__contact">
+            Контактные данные
+            (владельца кота)
+        </h3>
+        <div class="main-form__contacts">
+            <label>E-MAIL:<input type="text"></label>
+            <label>Телефон:<input type="text"></label>
+        </div>
+        <h3 class="main-form__comment">
+            Коментарий
+        </h3>
+        <label><textarea></textarea></label>
+        <h3 class="main-form__extra">Дополнительно</h3>
+        <div class="main-form__elements">
+            <label><input type="checkbox">сахарозаменитель</label>
+            <label><input type="checkbox">Питьевая вода</label>
+            <label><input type="checkbox">молоко</label>
+            <label><input type="checkbox">витамины</label>
+        </div>
+        <input type="submit" value="Отправить заявку">
+    </form>
+</main>
 </body>
 </html>

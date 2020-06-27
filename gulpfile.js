@@ -57,4 +57,4 @@ function Server(){
     gulp.watch('src/scss/**/*.scss',gulp.series(Sass,Js));
 }
 
-exports.start = series(Sass,Js,Images,Server);
+exports.start = series(Sass,Js,Server);

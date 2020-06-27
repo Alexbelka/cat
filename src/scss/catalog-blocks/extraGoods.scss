@@ -1,0 +1,44 @@
+.extraGoods{
+  display: flex;
+  flex-direction: column;
+}
+
+.extraGoods__title{
+  font-family:"Oswald",sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  position:relative;
+}
+
+.extraGoods__title:after{
+  content: " ";
+  position: absolute;
+  right:-20px;
+  width:53px;
+  height: 3px;
+  background-color:rgb(104,183,56);
+  top:50%;
+  transform:translateY(-50%);
+}
+
+
+@media(min-width:768px) {
+  .extraGoods {
+    width: 708px;
+  }
+}
+
+
+@media(min-width:1140px){
+  .extraGoods{
+    width:1000px;
+  }
+
+  .extraGoods-outSideWrapper{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 2px 2px red;
+    align-items: center;
+  }
+
+}

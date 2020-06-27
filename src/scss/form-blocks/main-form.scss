@@ -1,0 +1,65 @@
+
+.main-form{
+  width:280px;
+  box-shadow: 0 0 2px 2px red;
+  font-family: "Oswald", sans-serif;
+}
+
+.main-form label{
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.main-form__table{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-form__table label{
+  display: flex;
+  width: 100%;
+  box-shadow: 0 0 2px 2px black;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.main-form__table-name{
+  min-height:46px;
+  min-width: 229px;
+}
+
+.main-form__table-weight{
+  min-height: 45px;
+  min-width: 204px;
+  padding-left: 10px;
+}
+
+.main-form__table-age{
+  min-height: 45px;
+  min-width:172px;
+}
+
+.main-form__radio{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-form__radio label{
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.main-form__contacts{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-form__elements{
+  display: flex;
+  flex-direction: column;
+}
+

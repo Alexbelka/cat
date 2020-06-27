@@ -18,7 +18,10 @@
 @import"blocks/footer.scss";
 @import"blocks/footer-menu.scss";
 //----catalog
-@import "catalog-blocks/main-catalog";
-@import "catalog-blocks/catalog-menu";
-@import "catalog-blocks/menu-description";
-@import "catalog-blocks/catalog-wrapper";
+@import"catalog-blocks/catalog-main.scss";
+@import"catalog-blocks/catalog-wrapper.scss";
+@import"catalog-blocks/extraGoods.scss";
+@import "catalog-blocks/extraGoods-wrapper.scss";
+//----form
+@import"form-blocks/form-main.scss";
+@import"form-blocks/main-form.scss";

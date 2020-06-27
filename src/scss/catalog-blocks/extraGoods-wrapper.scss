@@ -1,0 +1,98 @@
+.extraGoods-wrapper{
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.extraGoods-wrapper__btn{
+  min-height:40px;
+  width: 100%;
+  background-color: rgb(104,183,56);
+  font-size: 20px;
+  line-height: 16px;
+  color:rgb(255,255,255);
+  text-transform: uppercase;
+}
+
+.extraGoods-wrapper__name{
+  display: flex;
+  flex-direction: column;
+}
+
+.extraGoods-wrapper__name-item h3{
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.extraGoods-wrapper__name-item--price{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.extraGoods-wrapper__name-item--price p{
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.extraGoods__picture{
+  min-height:289px;
+  background: url('../../../build/catalog-jpeg/gift-photo-mobile.jpg');
+  margin-top:40px;
+  padding: 65px 54px 40px 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.extraGoods__picture-text{
+  font-family:"Arial",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color:rgb(255,255,255);
+}
+
+@media(min-width: 768px){
+  .extraGoods-wrapper{
+    padding:0 35px 0;
+  }
+  .extraGoods-wrapper__name{
+  flex-direction: row;
+    justify-content: space-between;
+  }
+  .extraGoods__picture{
+    background:url('../../../build/catalog-jpeg/gift-photo-tablet.jpg') no-repeat;
+    background-size:100%;
+    min-height: 200px;
+    width: 708px;
+  }
+}
+
+
+@media(min-width:1140px){
+  .extraGoods-wrapper{
+    box-shadow: 0 0 2px 2px black;
+     width:695px;
+    flex-direction: row;
+  }
+
+  .extraGoods-wrapper__name{
+    box-shadow: 0 0 1px 2px red;
+    width:410px;
+  }
+
+  .extraGoods__picture{
+    min-height: 289px;
+    width:245px;
+    background: url('../../../build/catalog-jpeg/gift-photo-desktop.jpg');
+  }
+
+  .extraGoods-wrapper__btn{
+    width:200px;
+  }
+
+}

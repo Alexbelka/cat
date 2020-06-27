@@ -15,7 +15,16 @@
   text-align: center;
 }
 
+.page-header__text{
+  display: none;
+}
 
+.form .page-header .page-header__text{
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size:14px;
+  line-height: 18px;
+}
 
 @media(min-width:768px){
   .page-header{

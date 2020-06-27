@@ -5,11 +5,19 @@
   position: relative;
   overflow: hidden;
 }
+.catalog-main .frame{
+  box-shadow: 0 0 2px 2px red;
+  left:-20px;
+}
 
 @media(min-width:768px){
   .frame{
     width: 768px;
     min-height: 395px;
+  }
+  .catalog-main .frame{
+    box-shadow: 0 0 2px 2px green;
+    left:0;
   }
 }
 
