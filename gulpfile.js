@@ -33,17 +33,18 @@ function Js() {
         .pipe(gulp.dest('build/js'))
 }
 
-function Images(){
-    return gulp.src(['src/catalog-images/*'])
-        .pipe(imageMin())
-        .pipe(gulp.dest('build/catalog-images'))
-}
-//
-// function Svg(){
-//     return gulp.src(['src/catalog-svg/*'])
-//         .pipe(svgMin())
-//         .pipe(gulp.dest('build/catalog-svg'))
+// function Images(){
+//     return gulp.src(['src/catalog-images/*'])
+//         .pipe(imageMin())
+//         .pipe(gulp.dest('build/catalog-images'))
 // }
+
+    // function Svg(){
+    // return gulp.src(['src/form-svg/*'])
+    //     .pipe(svgMin())
+    //     .pipe(gulp.dest('build/form-svg'))
+    // }
+
 //
 // function Jpeg(){
 //     return gulp.src(['src/catalog-jpeg/*'])
