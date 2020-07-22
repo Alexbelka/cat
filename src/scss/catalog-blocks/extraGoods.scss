@@ -8,6 +8,7 @@
   font-size: 18px;
   line-height: 24px;
   position:relative;
+  margin:15px 0 15px;
 }
 
 .extraGoods__title:after{
@@ -21,6 +22,21 @@
   transform:translateY(-50%);
 }
 
+.extraGoods-wrapper{}
+
+.extraGoods-wrapper__name-item h3{
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 10px 0 10px;
+}
+
+.extraGoods-wrapper__name-item p{
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
 
 @media(min-width:768px) {
   .extraGoods {
@@ -34,11 +50,23 @@
     width:1000px;
   }
 
+  .extraGoods-container{
+    margin-top: 15px;
+    min-height: 289px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .extraGoods-outSideWrapper{
     display: flex;
     flex-direction: row;
-    box-shadow: 0 0 2px 2px red;
     align-items: center;
   }
 
+  .extraGoods__picture{
+    vertical-align: bottom;
+    margin-bottom: 24px;
+    margin-left: 55px;
+  }
 }

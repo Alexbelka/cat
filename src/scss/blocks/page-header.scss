@@ -15,9 +15,6 @@
   text-align: center;
 }
 
-.page-header__text{
-  display: none;
-}
 
 .form .page-header .page-header__text{
   display: block;
@@ -25,8 +22,8 @@
   font-size:14px;
   line-height: 18px;
   text-transform: uppercase;
-  text-align: left;
-  margin-left: 20px;
+  margin:0 auto 40px;
+  text-align: center;
 }
 
 @media(min-width:768px){
@@ -49,6 +46,9 @@
     width:1140px;
     padding: 0 70px 0;
     flex-direction: row;
+  }
+  .page-header__title{
+    padding-top: 40px;
   }
 }
 

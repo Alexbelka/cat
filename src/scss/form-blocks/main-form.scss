@@ -29,8 +29,8 @@
 }
 
 .main-form__table label{
-  display: flex;
   width: 100%;
+  display: flex;
   align-items: center;
   justify-content:space-between;
 }
@@ -39,6 +39,7 @@
   min-height:46px;
   min-width: 229px;
   border: 1px solid rgb(230,230,230);
+  margin-left: auto;
 }
 
 .main-form__table-weight{
@@ -50,20 +51,24 @@
 
 .main-form__table-age{
   min-height: 45px;
-  min-width:155px;
+  min-width:150px;
   border: 1px solid rgb(230,230,230);
 }
 
 .main-form__radio{
-  height:200px;
+  min-height:158px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 10px 0 10px;
+  justify-content: space-between;
+  padding:21px 0 21px;
+  border-top:1px solid rgb(200,200,200);
+  border-bottom:1px solid rgb(200,200,200);
+  margin: 30px 0 30px;
 }
 
 .main-form__radio-input:checked + .main-form__radio-span{
-  background: url('../../../build/form-svg/radiobutton.svg');
+  background: url('../../../build/form-svg/radiobutton.svg'),
+          url('../../../build/form-svg/radiobutton-2.svg');
 }
 
 .main-form__radio-span{
@@ -74,6 +79,7 @@
   cursor:pointer;
   left:0;
 }
+
 
 .main-form__radio label{
   font-size: 16px;
@@ -109,6 +115,13 @@
   padding: 21px 0 21px;
 }
 
+
+.main-form__contacts input{
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+
 .main-form__comment{
   position:relative;
 }
@@ -132,13 +145,13 @@
 }
 
 .main-form__table-mail{
-  width:219px;
+  min-width:219px;
   min-height: 45px;
   border:2px solid rgb(230,230,230);
 }
 
 .main-form__table-phone{
-  width:204px;
+  min-width:180px;
   min-height: 45px;
   border:2px solid rgb(230,230,230);
 }
@@ -169,6 +182,7 @@
   min-width:280px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  padding:15px;
 }
 
 .main-form__elements{
@@ -188,12 +202,7 @@
 }
 
 
-.main-form__elements-input:checked + .main-form__elements-span{
-  background: url('../../../build/form-svg/tick.svg.svg');
-}
-
-.main-form__elements-span:before{
-  content:"";
+.main-form__elements-span{
   position: absolute;
   width:30px;
   height: 30px;
@@ -201,6 +210,11 @@
   left:0;
   background: url('../../../build/form-svg/checkbox.svg');
   cursor:pointer;
+}
+
+.main-form__elements-input:checked + .main-form__elements-span{
+  background: url('../../../build/form-svg/checkbox.svg'),
+          url('../../../build/form-svg/tick.svg.svg');
 }
 
 .main-form__submit{
@@ -232,7 +246,6 @@
   .main-form{
   width:628px;
   }
-
   .main-form__table-name{
     min-width: 567px;
   }
@@ -243,8 +256,8 @@
     min-width: 497px;
   }
   .main-form__radio{
-    height: 300px;
-    padding: 70px 0 70px;
+    min-height: 196px;
+    //padding: 70px 0 70px;
   }
   .main-form__contacts{
   min-height: 220px;
@@ -295,6 +308,34 @@
   .main-form__extra-fields{
   width: 50%;
   }
+
+  .main-form__comment,
+  .main-form__contact{
+    margin-top: 30px;
+  }
+
+  .main-form__contact:after{
+    width: 180px;
+  }
+
+  .main-form__comment:after{
+    width: 460px;
+  }
+
+  //.main-form__contact:before{
+  //  content:"";
+  //  position:absolute;
+  //  min-height: 3px;
+  //  width:19px;
+  //  background-color: rgb(104,183,56);
+  //  right:-20px;
+  //  top:10px;
+  //}
+
+  .main-form__extra:after{
+    width: 440px;
+  }
+
 }
 
 
@@ -312,10 +353,10 @@
   }
 
   .main-form__radio{
-    box-shadow: 0 0 2px 2px rgb(230,230,230);
     width:40%;
     padding:0;
-    height: 170px;
+    min-height: 160px;
+    border:none;
   }
 
   .main-form__table-name{
@@ -329,22 +370,23 @@
   }
 
   .main-form__table-mail{
-    width: 300px;
-    box-shadow: 0 0 1px 1px red;
+    min-width: 400px;
+    padding:0 10px 0;
+    background: url('../../../build/form-svg/mail.svg.svg') no-repeat center right;
   }
 
   .main-form__table-phone{
-    width:300px;
+    min-width:350px;
+    padding-left: 10px;
+    background: url('../../../build/form-svg/phone.svg.svg') no-repeat center right;
   }
 
   .main-form__contacts{
-    box-shadow: 0 0 1px 1px orange;
     width:1000px;
     flex-direction: row;
   }
 
   .main-form__contacts label{
-    box-shadow: 0 0 2px 2px black;
     width:450px;
   }
 
@@ -353,13 +395,11 @@
   }
 
   .main-form__elements{
-    box-shadow: 0 0 2px 2px black;
     min-width: 1000px;
     min-height: 100px;
   }
 
   .main-form__elements label{
-    box-shadow: 0 0 2px 2px black;
     width: 25%;
   }
 

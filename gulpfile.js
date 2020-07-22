@@ -39,23 +39,23 @@ function Js() {
 //         .pipe(gulp.dest('build/catalog-images'))
 // }
 
-    // function Svg(){
-    // return gulp.src(['src/form-svg/*'])
-    //     .pipe(svgMin())
-    //     .pipe(gulp.dest('build/form-svg'))
-    // }
+    function Svg(){
+    return gulp.src(['src/form-svg/*'])
+        .pipe(svgMin())
+        .pipe(gulp.dest('build/form-svg'))
+    }
 
-//
-// function Jpeg(){
-//     return gulp.src(['src/catalog-jpeg/*'])
-//         .pipe(imageMin())
-//         .pipe(gulp.dest('build/catalog-jpeg'))
-// }
+
+function Jpeg(){
+    return gulp.src(['src/catalog-jpeg/*'])
+        .pipe(imageMin())
+        .pipe(gulp.dest('build/catalog-jpeg'))
+}
 
 function Server(){
     server.init({server:"./",browser:'firefox'});
     // gulp.watch('html/*.html').on('change', server.reload)
-    gulp.watch('src/scss/**/*.scss',gulp.series(Sass,Js));
+    gulp.watch('src/scss/**/*.scss',gulp.series(Sass,Js,Svg,Jpeg));
 }
 
-exports.start = series(Sass,Js,Server);
+exports.start = series(Sass,Js,Svg,Jpeg,Server);

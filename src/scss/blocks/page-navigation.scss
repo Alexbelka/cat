@@ -3,6 +3,26 @@
   min-height: inherit;
 }
 
+.page-navigation--opened{
+  display: block;
+}
+
+.page-navigation--closed .page-menu__item{
+  display: none;
+  &--active{
+    display: flex;
+  }
+}
+
+.page-navigation--closed .page-menu__close{
+  display:none;
+}
+
+.page-navigation--opened .page-menu__open{
+  display: none;
+}
+
+
 @media(min-width:768px){
   .page-navigation{
     padding: 0 30px 0;

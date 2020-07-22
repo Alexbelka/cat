@@ -4,6 +4,7 @@
   flex-direction: column;
 }
 
+
 .extraGoods-wrapper__btn{
   min-height:40px;
   width: 100%;
@@ -12,6 +13,8 @@
   line-height: 16px;
   color:rgb(255,255,255);
   text-transform: uppercase;
+  margin-top: 10px;
+  border: none;
 }
 
 .extraGoods-wrapper__name{
@@ -75,13 +78,15 @@
 
 @media(min-width:1140px){
   .extraGoods-wrapper{
-    box-shadow: 0 0 2px 2px black;
-     width:695px;
+    width:695px;
+    min-height: 50px;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
   }
 
   .extraGoods-wrapper__name{
-    box-shadow: 0 0 1px 2px red;
     width:410px;
   }
 
@@ -93,6 +98,8 @@
 
   .extraGoods-wrapper__btn{
     width:200px;
+    min-height: 50px;
+    height: 100%;
   }
 
 }
